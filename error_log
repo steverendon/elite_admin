@@ -1,0 +1,105 @@
+[26-Nov-2018 14:02:24 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:02:24 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 112
+[26-Nov-2018 14:02:24 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 113
+[26-Nov-2018 14:02:28 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:02:28 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 198
+[26-Nov-2018 14:02:28 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 199
+[26-Nov-2018 14:02:34 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:02:34 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 112
+[26-Nov-2018 14:02:34 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 113
+[26-Nov-2018 14:02:42 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:02:42 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 112
+[26-Nov-2018 14:02:42 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 113
+[26-Nov-2018 14:02:51 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:02:51 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 198
+[26-Nov-2018 14:02:51 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 199
+[26-Nov-2018 14:03:02 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:03:02 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 112
+[26-Nov-2018 14:03:02 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 113
+[26-Nov-2018 14:03:03 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:03:03 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 198
+[26-Nov-2018 14:03:03 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 199
+[26-Nov-2018 14:04:35 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:04:35 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 112
+[26-Nov-2018 14:04:35 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 113
+[26-Nov-2018 14:04:48 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:04:48 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 198
+[26-Nov-2018 14:04:48 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 199
+[26-Nov-2018 14:18:52 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:18:52 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 198
+[26-Nov-2018 14:18:52 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 199
+[26-Nov-2018 14:18:53 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:18:53 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 198
+[26-Nov-2018 14:18:53 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 199
+[26-Nov-2018 14:18:57 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:18:57 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 112
+[26-Nov-2018 14:18:57 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 113
+[26-Nov-2018 14:19:01 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:19:01 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 156
+[26-Nov-2018 14:19:01 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 157
+[26-Nov-2018 14:19:07 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:19:07 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 112
+[26-Nov-2018 14:19:07 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 113
+[26-Nov-2018 14:22:25 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:22:25 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 198
+[26-Nov-2018 14:22:25 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 199
+[26-Nov-2018 14:22:28 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:22:28 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 112
+[26-Nov-2018 14:22:28 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 113
+[26-Nov-2018 14:22:31 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:22:31 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 198
+[26-Nov-2018 14:22:31 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 199
+[26-Nov-2018 14:22:34 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:22:34 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 112
+[26-Nov-2018 14:22:34 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 113
+[26-Nov-2018 14:38:11 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:38:11 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 112
+[26-Nov-2018 14:38:11 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 113
+[26-Nov-2018 14:38:15 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:38:15 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 198
+[26-Nov-2018 14:38:15 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 199
+[26-Nov-2018 14:44:01 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:44:01 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 198
+[26-Nov-2018 14:44:01 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 199
+[26-Nov-2018 14:47:31 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:47:31 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 198
+[26-Nov-2018 14:47:31 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 199
+[26-Nov-2018 14:47:41 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:47:41 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 112
+[26-Nov-2018 14:47:41 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 113
+[26-Nov-2018 14:48:27 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:48:27 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 112
+[26-Nov-2018 14:48:27 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 113
+[26-Nov-2018 14:48:31 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:48:31 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 198
+[26-Nov-2018 14:48:31 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 199
+[26-Nov-2018 14:53:31 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:53:31 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 198
+[26-Nov-2018 14:53:31 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 199
+[26-Nov-2018 14:53:34 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:53:34 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 112
+[26-Nov-2018 14:53:34 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 113
+[26-Nov-2018 14:53:38 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:53:38 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 198
+[26-Nov-2018 14:53:38 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 199
+[26-Nov-2018 14:53:42 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:53:42 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 112
+[26-Nov-2018 14:53:42 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 113
+[26-Nov-2018 14:53:44 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:53:44 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 112
+[26-Nov-2018 14:53:44 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 113
+[26-Nov-2018 14:53:47 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:53:47 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 156
+[26-Nov-2018 14:53:47 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 157
+[26-Nov-2018 14:54:50 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 14:54:50 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 198
+[26-Nov-2018 14:54:50 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 199
+[26-Nov-2018 15:06:59 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 15:06:59 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 112
+[26-Nov-2018 15:06:59 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 113
+[26-Nov-2018 15:08:35 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 15:08:35 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 198
+[26-Nov-2018 15:08:35 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 199
+[26-Nov-2018 15:08:42 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/amazonprimecom/public_html/pruebas/core/conexion.php on line 5
+[26-Nov-2018 15:08:42 UTC] PHP Warning:  mysqli::stmt_init(): Couldn't fetch mysqli in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 112
+[26-Nov-2018 15:08:42 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/amazonprimecom/public_html/pruebas/core/models/persona.php on line 113

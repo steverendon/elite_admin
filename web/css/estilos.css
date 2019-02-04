@@ -1,0 +1,6 @@
+.contenido{padding: 0px;background: #F4F9F8}
+.error_login{background: red;padding: 10px;text-align: center;color: #fff;display: none}
+#load{display: none}
+#ok{display: none}
+.footer{background: #11111A;text-align: center;color: #fff}
+.footer p{padding: 20px}
