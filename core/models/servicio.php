@@ -183,6 +183,7 @@ function lanzar_notificacion($mysql)
                         body: "There is a new service request",
                         icon: "web/img/boton.png",
                         requireInteraction: true,
+                        vibrate[1000,100],
                         //timeout:4000,
                         onClick: function(){
                             window.location="https://elitee.co/index.php?view=solicitudes";
