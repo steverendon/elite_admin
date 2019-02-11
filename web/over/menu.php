@@ -6,17 +6,41 @@
 
   <div class="collapse navbar-collapse" id="navbarColor01">
 
-    <ul class="navbar-nav mr-auto">
-     <li class="nav-item">
-        <a class="nav-link" href="index.php?view=solicitudes"><i class="fas fa-table"></i> Requests <span class="sr-only">(current)</span></a>
-      </li>
+   <?php if($_SESSION['rol']==1){ ?>
+
+      <ul class="navbar-nav mr-auto">
+       <li class="nav-item">
+          <a class="nav-link" href="index.php?view=solicitudes"><i class="fas fa-table"></i> Requests <span class="sr-only">(current)</span></a>
+        </li>
       <li class="nav-item">
         <a class="nav-link" href="index.php?view=administracion"><i class="fas fa-tachometer-alt"></i> Administration Iot</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="index.php?view=boton"><i class="fas fa-arrow-alt-circle-up"></i> Button Iot</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.php?view=administrarUsuarios"><i class="fas fa-user-friends"></i> Manage users</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.php?view=administrarZonas"><i class="fas fa-map-signs"></i> Manage zones</a>
+      </li>
     </ul>
+
+<?php }else if($_SESSION['rol']==2){ ?>
+
+        <ul class="navbar-nav mr-auto">
+         <li class="nav-item">
+            <a class="nav-link" href="index.php?view=panelServicioCliente"><i class="fas fa-table"></i> Requests <span class="sr-only">(current)</span></a>
+          </li>
+      </ul>
+
+    <?php } ?>
+
+    <span class="navbar-text">
+      <p style="margin:0px 20px"><i class="fas fa-user"></i> <?php echo $_SESSION['usuario'] ?></p>
+    </span>
+
+
     <form class="form-inline my-2 my-lg-0">
      <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search"> -->
       <button class="btn btn-info" type="button" data-toggle="modal" data-target="#salir"><i class="fas fa-sign-out-alt"></i> Exit</button>

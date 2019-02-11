@@ -102,7 +102,7 @@ function select_btn($mysql)
     $sql = "SELECT num_boton FROM bodega_boton WHERE estado = 0 || estado = 2";
     $consulta = $mysql->query($sql);
 
-    $salida .= '<select class="form-control form-control-lg" id="exampleSelect1" name="num_boton">';
+    $salida .= '<select class="form-control" id="exampleSelect1" name="num_boton">';
     $salida .= '<option>Elite Button Serial Number</option>';
     while($resultado = $consulta->fetch_array())
     {

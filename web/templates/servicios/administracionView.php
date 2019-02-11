@@ -23,9 +23,9 @@
                     <div class="col-lg-4">
                         <div class="card bg-light mb-3">
                             <div class="card-header bg-primary text-white"><i class="fas fa-map-marker-alt"></i> Search Ubication</div>
-                          <div class="card-body">
+                          <div class="card-body" style="height:153px">
                             <div class="form-group">
-                              <button type="button" class="btn btn-success" id="dame_ubicacion">View Ubication</button>
+                              <button type="button" class="btn btn-info" id="dame_ubicacion">View Ubication</button>
                               <a href="https://www.google.com/maps/d/u/0/edit?hl=es&mid=1YotwVqsXyNKRXwLZnZz38rDDcDQfstdu&ll=26.700250992896862%2C-80.05877213770384&z=15" target="_blank" class="btn btn-outline-info" id="btn-link">View Zone</a>
                             </div>
                               <p><i class="fas fa-globe"></i> <b id="latitud">Latitud:</b></p>
@@ -36,38 +36,38 @@
                     <div class="col-lg-8">
                     <div class="card bg-light mb-3">
                     <div class="card-header bg-primary text-white"><i class="fas fa-user-plus"></i> New Client</div>
-                      <div class="card-body">
+                      <div class="card-body" style="height:153px">
 
                         <form action="" id="formin">
                           <div class="row">
                               <div class="col-lg-4">
                                 <div class="form-group">
-                                  <input class="form-control form-control-lg text-capitalize" type="text" placeholder="Client Name" name="nombre" id="nombre" required>
+                                  <input class="form-control text-capitalize" type="text" placeholder="Client Name" name="nombre" id="nombre" required>
                                 </div>
                               </div>
                               <div class="col-lg-4">
                                 <div class="form-group">
-                                  <input class="form-control form-control-lg" type="text" placeholder="Address" name="direccion" id="direccion" required>
+                                  <input class="form-control" type="text" placeholder="Address" name="direccion" id="direccion" required>
                                 </div>
                               </div>
                               <div class="col-lg-4">
                                 <div class="form-group">
-                                  <input class="form-control form-control-lg" type="text" placeholder="Prymary Phone" name="telefono" id="telefono" required>
+                                  <input class="form-control" type="text" placeholder="Prymary Phone" name="telefono" id="telefono" required>
                                 </div>
                               </div>
                               <div class="col-lg-4">
                                 <div class="form-group">
-                                  <input class="form-control form-control-lg" type="text" placeholder="Email" name="correo" id="correo" required>
+                                  <input class="form-control" type="text" placeholder="Email" name="correo" id="correo" required>
                                 </div>
                               </div>
                               <div class="col-lg-4">
                                 <div class="form-group">
-                                  <input class="form-control form-control-lg" type="text" placeholder="Tax Id" name="documento" id="documento" required>
+                                  <input class="form-control" type="text" placeholder="Tax Id" name="documento" id="documento" required>
                                 </div>
                               </div>
                               <div class="col-lg-4">
                                 <div class="form-group">
-                                <input class="btn btn-lg btn-success btn-block" type="submit" id="btn-ingresar" value="Save">
+                                <input class="btn btn-success btn-block" type="submit" id="btn-ingresar" value="Save">
                                 </div>
                               </div>
                           </div>
@@ -88,7 +88,7 @@
                             <div class="row">
                                 <div class="col-lg-4">
                                   <div class="form-group">
-                                    <input class="form-control form-control-lg" type="text" placeholder="Tax id" id="Documento" name="documento" required>
+                                    <input class="form-control" type="text" placeholder="Tax id" id="Documento" name="documento" required>
                                   </div>
                                 </div>
                                 <div class="col-lg-4">
@@ -101,41 +101,56 @@
                                 </div>
                                 <div class="col-lg-4">
                                   <div class="form-group">
-                                    <input class="form-control form-control-lg" type="text" placeholder="Cliente Name" id="nombre_boton" name="nombre_boton" required>
+                                    <input class="form-control" type="text" placeholder="Cliente Name" id="nombre_boton" name="nombre_boton" required>
                                   </div>
                                 </div>
                                 <div class="col-lg-4">
                                   <div class="form-group">
-                                    <input class="form-control form-control-lg" type="text" placeholder="Longitud" id="input_lon" name="longitud" required>
+                                    <input class="form-control" type="text" placeholder="Longitud" id="input_lon" name="longitud" required>
                                   </div>
                                 </div>
                                 <div class="col-lg-4">
                                   <div class="form-group">
-                                    <input class="form-control form-control-lg" type="text" placeholder="Latitud" id="input_lat" name="latitud" required>
+                                    <input class="form-control" type="text" placeholder="Latitud" id="input_lat" name="latitud" required>
                                   </div>
                                 </div>
                                 <div class="col-lg-4">
                                   <div class="form-group">
-                                    <input class="form-control form-control-lg" type="text" placeholder="Work Order Address" id="direccion" name="direccion" required>
+                                    <input class="form-control" type="text" placeholder="Work Order Address" id="direccion" name="direccion" required>
                                   </div>
                                 </div>
                                 <div class="col-lg-4">
                                   <div class="form-group">
-                                    <input class="form-control form-control-lg" type="text" placeholder="Main Contant Phone" id="telefono" name="telefono" required>
+                                    <input class="form-control" type="text" placeholder="Main Contant Phone" id="telefono" name="telefono" required>
                                   </div>
                                 </div>
-                                <div class="col-lg-2">
-                                      <select class="form-control form-control-lg" id="exampleSelect1" name="zona">
-                                        <option>Zone</option>
-                                        <option value="1">Zone 1</option>
-                                        <option value="2">Zone 2</option>
-                                        <option value="3">Zone 3</option>
-                                        <option value="4">Zone 4</option>
-                                      </select>
+
+                                <!--
+
+                                  lista de zonas ajax
+
+                                -->
+
+
+                                <div class="col-lg-2" id="lista_zonas_3">
+
+
+                                    <!-- ajax -->
+
                                 </div>
+
+
+
+                                <!--
+
+                                  lista de zonas ajax
+
+                                -->
+
+
                                 <div class="col-lg-6">
                                   <div class="form-group">
-                                      <input class="btn btn-lg btn-success btn-block" type="submit" id="btn-activar" value="Activate">
+                                      <input class="btn btn-success btn-block" type="submit" id="btn-activar" value="Activate">
                                   </div>
                                 </div>
                             </div>
@@ -295,6 +310,7 @@
     <script src="web/ajax/boton/crear_codigo_aws.js"></script>
     <script src="web/ajax/clientes/buscar_cliente.js"></script>
     <script src="web/ajax/boton/ingresar_boton_bodega.js"></script>
+    <script src="web/ajax/zonas/listaZonas/listaZonasAjax.js"></script>
 
 <?php require_once 'web/over/footer.php'?>
 

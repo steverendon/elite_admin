@@ -42,6 +42,67 @@ return $salida;
 
 }
 
+
+function mostrar_panel($mysql)
+{
+$query = "SELECT b.documento,b.direccion,b.telefono,b.latitud,b.longitud,s.estado,s.fecha,s.hora,s.id,b.latitud,b.longitud, b.nombre_boton, b.zona FROM servicios as s LEFT JOIN boton as b on s.num_boton = b.num_boton where s.estado = 'solicitado' ORDER BY s.id DESC";
+$resultado = $mysql->query($query);
+
+$salida = "<table class='table table-hover' style='overflow:auto'>
+              <thead>
+                <tr>
+                  <th scope='col'>Service Address</th>
+                  <th scope='col'>Telephone</th>
+                  <th scope='col'>Name</th>
+                  <th scope='col'>Zone</th>
+                  <th scope='col'>State</th>
+                  <th scope='col'>Date</th>
+                  <th scope='col'>Hour</th>
+                  <th scope='col'></th>
+                </tr>
+              </thead>
+              <tbody>";
+
+while($fila=$resultado->fetch_array())
+{
+    $id = $_SESSION['id'];
+    $sql = "SELECT id_zona FROM zona_usuario WHERE id_usuario = '$id'";
+    $r = $mysql->query($sql);
+    while($rz = $r->fetch_array())
+    {
+        if($rz[0] == $fila[12])
+        {
+            $salida .= " <tr>
+                          <th>".$fila[1]."</th>
+                          <td>".$fila[2]."</td>
+                          <td>".$fila[11]."</td>
+                          <td>".$fila[12]."</td>
+                          <td>".$fila[5]."</td>
+                          <td>".$fila[6]."</td>
+                          <td>".$fila[7]."</td>
+                          <td><a href='index.php?view=mapa&documento=".$fila[0]."&id=".$fila[8]."&estado=".$fila[5]."&latitud=".$fila[9]."&longitud=".$fila[10]."&direccion=".$fila[1]."&fecha=".$fila[6]."&hora=".$fila[7]."'><i class='fas fa-caret-right' style='font-size:2em'></i></a></td>
+                        </tr>";
+
+            lanzar_notificacion($mysql);
+        }
+    }
+}
+
+
+$salida .= "</tbody></table>";
+
+return $salida;
+
+}
+
+function ver_zona($mysql,$id)
+{
+    $sql = "SELECT id_zona FROM zona_usuario WHERE id_usuario = '$id'";
+    $resultado = $mysql->query($sql);
+    $q = $resultado->fetch_array();
+    return $q;
+}
+
 function mostrar_historial($mysql)
 {
 $query = "SELECT b.num_boton,b.direccion,b.telefono,b.latitud,b.longitud,s.estado,s.fecha,s.hora, b.nombre_boton FROM servicios as s LEFT JOIN boton as b on s.num_boton = b.num_boton ORDER BY s.id DESC";

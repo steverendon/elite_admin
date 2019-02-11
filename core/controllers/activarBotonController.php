@@ -18,7 +18,7 @@ $direccion = $_POST['direccion'];
 $telefono = $_POST['telefono'];
 $latitud = $_POST['latitud'];
 $longitud = $_POST['longitud'];
-$zona = $_POST['zona'];
+$zona = $_POST['id_zona'];
 
 if(activarBoton($conexion,$documento,$num_boton,$nombre_boton,$direccion,$telefono,$latitud,$longitud,$zona)){
     echo json_encode(array('error' => false));

@@ -1,5 +1,5 @@
 <div class="footer">
-    <p>Elite version 1.0</p>
+    <p>Elite version 2.0</p>
 </div>
 
 <!-- modal -->

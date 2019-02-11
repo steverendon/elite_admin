@@ -13,8 +13,16 @@ jQuery(document).on('submit','#formlg',function(event){
     .done(function(respuesta){
         console.log(respuesta);
         if(!respuesta.error){
-            var p = 'solicitudes';
-            location.href = 'index.php?view='+p;
+            if(respuesta.tipo == 1)
+            {
+                var p = 'solicitudes';
+                location.href = 'index.php?view='+p;
+            }
+            else if(respuesta.tipo == 2)
+            {
+                var p = 'panelServicioCliente';
+                location.href = 'index.php?view='+p;
+            }
         }else{
             $('.error_login').slideDown('slow');
             setTimeout(function(){

@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 $latitud = $_GET['latitud'];
 $longitud = $_GET['longitud'];
 
