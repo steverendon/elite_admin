@@ -42,7 +42,7 @@
                               <!--
 
 
-                              formulario asinar usuarios
+                              formulario asignar usuarios
 
                                 -->
 

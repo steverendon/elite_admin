@@ -14,11 +14,12 @@ jQuery(document).on('submit','#formas',function(event){
         console.log(respuesta);
         if(!respuesta.error){
              alertify.success('Usuario Asignado!');
+            $('#lista_zonas').load('web/ajax/zonas/listaZonas/listaZonasAjax.php');
+            $('#lista_zonas_2').load('web/ajax/zonas/listaZonas/listaZonasAjax.php');
+            $('#lista_zonas_3').load('web/ajax/zonas/listaZonas/listaZonasAjax.php');
+            $('#zonaSinAgente').load('web/ajax/zonas/zonaAlerta/zonaAlertaAjax.php');
+            $('#zonas').load('web/ajax/zonas/zonas/zonasAjax.php');
             $('#btn-asignar-usuario').val('Asignar');
-            $('#nombre').val('');
-            $('#usuario').val('');
-            $('#clave').val('');
-            $('#rol').val('');
         }else{
              alertify.error('Error Al Asignar Usuario!');
             $('#btn-asignar-usuario').val('Asignar');

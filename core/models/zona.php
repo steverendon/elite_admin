@@ -58,7 +58,7 @@ function zonas($mysql)
     while($u = $resultado->fetch_array())
     {
 
-        echo '<h3 class="card-header">'.$u[1].'</h3>';
+        echo '<h3 class="card-header" data-toggle="modal" data-target="#modalAsignacionZona" onClick="agregaDatos('.$u[0].')">'.$u[1].'</h3>';
 
         zona_usuario($mysql,$u[0]);
 

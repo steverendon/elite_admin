@@ -35,3 +35,11 @@ jQuery(document).on('submit','#formzo',function(event){
         console.log("complete")
     });
 });
+
+function agregaDatos(idZona)
+{
+    //d = datos.split('||');
+
+    $("#zonau").val(idZona);
+
+}

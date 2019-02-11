@@ -143,6 +143,35 @@
 
 </div>
 
+                <!--
+
+                modal asignacion de usuario
+
+                -->
+
+    <div class="modal" id="modalAsignacionZona">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Asignar Usuario</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form action="" id="formas">
+              <div class="modal-body">
+                    <div class="form-group" id="lista_usuarios_3"></div>
+                    <input type="hidden" value="" id="zonau" name="id_zona">
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Agregar</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
 
     <script src="web/ajax/zonas/crearZona/crearZonaAjax.js"></script>
     <script src="web/ajax/zonas/eliminarZona/eliminarZonaAjax.js"></script>
@@ -150,6 +179,8 @@
     <script src="web/ajax/zonas/zonas/zonasAjax.js"></script>
     <script src="web/ajax/zonas/zonaAlerta/zonaAlertaAjax.js"></script>
     <script src="web/ajax/zona_usuarios/desasignarUsuario/desasignarUsuarioAjax.js"></script>
+    <script src="web/ajax/usuarios/listaUsuario/listaUsuariosAjax.js"></script>
+    <script src="web/ajax/zona_usuarios/asignarUsuario/asignarUsuarioAjax.js"></script>
 
 <?php require_once 'web/over/footer.php'?>
 
