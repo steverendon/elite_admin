@@ -139,6 +139,68 @@ return $salida;
 
 }
 
+function mostrar_resumen_aceptados($mysql)
+{
+$query = "SELECT b.num_boton,b.direccion,b.zona,b.telefono,b.nombre_boton,s.estado,s.fecha,s.hora,s.fecha_rta,s.hora_rta,s.agente,s.value FROM servicios as s LEFT JOIN boton as b on s.num_boton = b.num_boton where s.estado = 'ASIGNADO' ORDER BY s.id DESC";
+$resultado = $mysql->query($query);
+
+
+
+    while($fila=$resultado->fetch_array())
+    {
+        echo '<div class="card border-primary mb-3">
+                <div class="card-body">
+                  <h4 class="card-title">Servicio Aceptado - <b>'.$fila[4].'</b></h4>
+                  <p class="card-text">Solicitado a las <b>'.$fila[7].'</b> el <b>'.$fila[6].'</b>. Para la direccion '.$fila[1].'. Serial del boton <b>'.$fila[0].'</b>. Fue aceptado por <b>'.$fila[10].'</b> y el numero de orden <b>'.$fila[11].'</b> a las <b>'.$fila[9].'</b> el <b>'.$fila[8].'</b></p>
+                </div>
+              </div>';
+    }
+
+}
+
+function mostrar_resumen_cancelados($mysql)
+{
+$query = "SELECT b.num_boton,b.direccion,b.zona,b.telefono,b.nombre_boton,s.estado,s.fecha,s.hora,s.fecha_rta,s.hora_rta,s.agente,s.value FROM servicios as s LEFT JOIN boton as b on s.num_boton = b.num_boton where s.estado = 'CANCELADO' ORDER BY s.id DESC";
+$resultado = $mysql->query($query);
+
+
+
+    while($fila=$resultado->fetch_array())
+    {
+        echo '<div class="card border-primary mb-3">
+                <div class="card-body">
+                  <h4 class="card-title">Servicio Cancelado - <b>'.$fila[4].'</b></h4>
+                  <p class="card-text">Solicitado a las <b>'.$fila[7].'</b> el <b>'.$fila[6].'</b>. Para la direccion <b>'.$fila[1].'</b>. Serial del boton <b>'.$fila[0].'</b>, fue cancelado por <b>'.$fila[10].'</b> a las <b>'.$fila[9].'</b> el <b>'.$fila[8].'</b>. El motivo de cancelacion es el siguiente:<b>'.$fila[11].'</b></p>
+                </div>
+              </div>';
+    }
+
+}
+
+function mostrar_tabla_resumen($mysql)
+{
+$query = "SELECT b.num_boton,b.direccion,b.zona,b.telefono,b.nombre_boton,s.estado,s.fecha,s.hora,s.fecha_rta,s.hora_rta,s.agente,s.value FROM servicios as s LEFT JOIN boton as b on s.num_boton = b.num_boton ORDER BY s.id DESC";
+$resultado = $mysql->query($query);
+
+
+    while($fila=$resultado->fetch_array())
+    {
+
+        echo '<p><b>Alias: </b>'.$fila[4].'<br>
+              <b>Dns: </b>'.$fila[0].'<br>
+              <b>Direccion: </b>'.$fila[1].'<br>
+              <b>Zona: </b>'.$fila[2].'<br>
+              <b>Estado: </b>'.$fila[5].'<br>
+              <b>Solicitado:</b>'.$fila[7].' '.$fila[6].' <br>
+              <b>Respondido:</b>'.$fila[9].' '.$fila[8].'<br>
+              <b>Agente: </b>'.$fila[10].'<br>
+              <b>Observaciones: </b>'.$fila[11].'<br></p>
+              <hr>';
+    }
+
+
+}
+
 function ingresar_solicitud($mysql,$v1,$v2,$v3,$v4)
 {
     $consulta = "INSERT INTO servicios(num_boton,estado,fecha,hora) VALUES (?,?,?,?)";

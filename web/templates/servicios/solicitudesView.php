@@ -69,65 +69,39 @@
 
         <ul class="nav nav-tabs">
             <li class="nav-item">
-              <a class="nav-link show active" data-toggle="tab" href="#home">Servicios Asignados</a>
+              <a class="nav-link show active" data-toggle="tab" href="#asignados">Servicios Asignados</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link show" data-toggle="tab" href="#profile">Servicios Cancelados</a>
+              <a class="nav-link show" data-toggle="tab" href="#cancelados">Servicios Cancelados</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link show" data-toggle="tab" href="#profile">Vista Por Usuarios</a>
+              <a class="nav-link show" data-toggle="tab" href="#tabla">Lista</a>
             </li>
           </ul>
           <div id="myTabContent" class="tab-content">
-            <div class="tab-pane fade active show" id="home">
+            <div class="tab-pane fade active show" id="asignados">
 
                 <br>
 
-                <div class="card border-primary mb-3">
-                  <div class="card-body">
-                    <h4 class="card-title">Servicio Aceptado</h4>
-                    <p class="card-text">A las 9:35 am el 2019-12-02 se hizo solicitud de servicio para la direccion cll 45 23 12 con numero de boton 234556777, fue aceptada por Mauricio Roth a las 9:37 am el 2019-12-02</p>
-                  </div>
-                </div>
-                    <div class="card border-primary mb-3">
-                      <div class="card-body">
-                        <h4 class="card-title">Servicio Aceptado</h4>
-                        <p class="card-text">A las 9:35 am el 2019-12-02 se hizo solicitud de servicio para la direccion cll 45 23 12 con numero de boton 234556777, fue aceptada por Mauricio Roth a las 9:37 am el 2019-12-02</p>
-                      </div>
-                    </div>
+                <?php mostrar_resumen_aceptados($conexion) ?>
 
             </div>
 
-            <div class="tab-pane fade" id="profile">
+            <div class="tab-pane fade" id="cancelados">
 
                 <br>
 
-                <div class="card border-primary mb-3">
-                  <div class="card-body">
-                    <h4 class="card-title">Servicio Cancelado - zapateria la 15</h4>
-                    <p class="card-text">A las 9:35 am el 2019-12-02 se recibio una solicitud de servicio para la direccion cll 45 23 12 con numero de boton 234556777, esta fue cancelado por el siguiente motivo: <b>se presiono el boton por error</b>. Esta gestion fue realizada por el agente Mauricio Roth a las 9:37 am el 2019-12-02</p>
-                  </div>
-                </div>
-                <div class="card border-primary mb-3">
-                  <div class="card-body">
-                    <h4 class="card-title">Servicio Cancelado - zapateria la 15</h4>
-                    <p class="card-text">A las 9:35 am el 2019-12-02 se recibio una solicitud de servicio para la direccion cll 45 23 12 con numero de boton 234556777, esta fue cancelado por el siguiente motivo: <b>se presiono el boton por error</b>. Esta gestion fue realizada por el agente Mauricio Roth a las 9:37 am el 2019-12-02</p>
-                  </div>
-                </div>
-                <div class="card border-primary mb-3">
-                  <div class="card-body">
-                    <h4 class="card-title">Servicio Cancelado - zapateria la 15</h4>
-                    <p class="card-text">A las 9:35 am el 2019-12-02 se recibio una solicitud de servicio para la direccion cll 45 23 12 con numero de boton 234556777, esta fue cancelado por el siguiente motivo: <b>se presiono el boton por error</b>. Esta gestion fue realizada por el agente Mauricio Roth a las 9:37 am el 2019-12-02</p>
-                  </div>
-                </div>
-                    <div class="card border-primary mb-3">
-                      <div class="card-body">
-                        <h4 class="card-title">Servicio Cancelado</h4>
-                        <p class="card-text">A las 9:35 am el 2019-12-02 se hizo solicitud de servicio para la direccion cll 45 23 12 con numero de boton 234556777, fue cancelado por Mauricio Roth a las 9:37 am el 2019-12-02</p>
-                      </div>
-                    </div>
+                <?php mostrar_resumen_cancelados($conexion) ?>
 
-          </div>
+            </div>
+
+            <div class="tab-pane fade" id="tabla">
+
+                <br>
+
+                <?php mostrar_tabla_resumen($conexion) ?>
+
+            </div>
 
       </div>
     </div>
@@ -138,7 +112,7 @@
     <source type="audio/wav" src="web/sonidos/notificacion.mp3">
 </audio>
 
-<?php require_once 'web/over/footer.php'?>
+<?php require_once 'web/over/footer.php' ?>
 
 <script src="web/ajax/servicios/servicio.js"></script>
 <script src="web/ajax/servicios/historial.js"></script>
