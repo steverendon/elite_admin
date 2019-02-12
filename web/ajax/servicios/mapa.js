@@ -1,7 +1,7 @@
 function aceptar(id){
-    alertify.confirm("Aceptar solicitud","Aceptar solicitud de servicio",
-      function(){
-        asignarServicio(id);
+    alertify.prompt("Aceptar solicitud","Orden de servicio",
+      function(evt, value){
+        asignarServicio(id,value);
       },
       function(){
         alertify.error('Cancelado');
@@ -9,20 +9,20 @@ function aceptar(id){
 }
 
 function cancelar(id){
-    alertify.confirm("Cancelar solicitud","Esta seguro de cancelar esta solicitud de servicio?",
-      function(){
-        cancelarServicio(id);
+    alertify.prompt("Cancelar solicitud?","Observaciones",
+      function(evt, value){
+        cancelarServicio(id,value);
       },
       function(){
         alertify.error('Cancelado');
       });
 }
 
-function asignarServicio(id){
+function asignarServicio(id,value){
     $.ajax({
         type:"POST",
         url: "core/controllers/aceptarSolicitudController.php",
-        data:{ id:id },
+        data:{ id:id, value:value },
         success:function(r){
             if(r==1){
                 $('#btn-aceptar').attr('disabled','disabled');
@@ -35,11 +35,11 @@ function asignarServicio(id){
     });
 }
 
-function cancelarServicio(id){
+function cancelarServicio(id, value){
     $.ajax({
         type:"POST",
         url: 'core/controllers/cancelarSolicitudController.php',
-        data:{ id:id },
+        data:{ id:id, value:value },
         success:function(r){
             if(r==1){
                 $('#btn-aceptar').attr('disabled','disabled');

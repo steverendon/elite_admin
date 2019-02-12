@@ -160,13 +160,17 @@ function ingresar_solicitud($mysql,$v1,$v2,$v3,$v4)
     $sentencia->close();
 }
 
-function aceptar_solicitud($mysql,$v1,$v2)
+function aceptar_solicitud($mysql,$v1,$v2,$v3,$v4,$v5,$v6)
 {
-    $consulta = "UPDATE servicios SET estado = ? WHERE id = ?";
+    $consulta = "UPDATE servicios SET estado = ?, fecha_rta = ?, hora_rta = ?, agente = ?, value = ? WHERE id = ?";
     $sentencia = $mysql->prepare($consulta);
-    $sentencia->bind_param("si", $estado,$id);
+    $sentencia->bind_param("sssssi", $estado,$fecha,$hora,$agente,$value,$id);
     $estado = $mysql->real_escape_string($v1);
     $id = $mysql->real_escape_string($v2);
+    $fecha = $mysql->real_escape_string($v3);
+    $hora = $mysql->real_escape_string($v4);
+    $agente = $mysql->real_escape_string($v5);
+    $value = $mysql->real_escape_string($v6);
 
     if($sentencia->execute()){
         return 1;

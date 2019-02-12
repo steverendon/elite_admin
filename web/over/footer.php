@@ -5,7 +5,7 @@
 <!-- modal -->
 
 <div class="modal" id="salir"  role="dialog">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-sm" role="document">
        <div class="modal-content">
          <div class="modal-header">
            <h5 class="modal-title">Salir</h5>
