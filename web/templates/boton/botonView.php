@@ -86,9 +86,112 @@
 
 </div>
 
+
+
+
 <script src="web/ajax/boton/boton.js"></script>
 
 <?php require_once 'web/over/footer.php'?>
+
+
+
+<!-- resumen -->
+
+<div class="modal" id="boton_datos" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-info">
+        <h5 class="modal-title">RESUMEN</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"  style="height:600px;overflow:auto;text-align:left">
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link show" data-toggle="tab" href="#boton">Button</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link show" data-toggle="tab" href="#cliente">Customer</a>
+            </li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+
+            <div class="tab-pane fade" id="boton">
+
+                <br>
+
+
+                <form action="" id="formacbo">
+
+                    <h5>DNS: 8765786587</h5>
+
+                    <hr>
+
+                    <div class="row">
+
+                        <div class="col-lg-4">
+                          <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Area" id="nombre_boton" name="nombre_boton" required>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                          <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Email" id="email_contacto" name="email_contacto" required>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                          <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Contact" id="contacto" name="contacto" required>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                          <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Main Contant Phone" id="telefono" name="telefono" required>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                          <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Secondary Contant Phone" id="telefono_2" name="telefono_2">
+                            <input class="form-control" type="hidden" placeholder="Secondary Contant Phone" id="boton" name="boton" value="<?php echo $boton ?>">
+                          </div>
+                        </div>
+
+
+                        <div class="col-lg-4">
+                          <div class="form-group">
+                              <input class="btn btn-success btn-block" type="submit" id="btn-activar" value="Update">
+                          </div>
+                        </div>
+                    </div>
+
+                </form>
+
+                <hr>
+
+                <h5>Informacion</h5>
+
+            </div>
+
+            <div class="tab-pane fade" id="cliente">
+
+                <br>
+
+                <?php mostrar_tabla_resumen($conexion); ?>
+
+            </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
 
 </body>
 </html>

@@ -151,3 +151,25 @@ function contar_pulsaciones($mysql,$v1)
     $r = $resultado->fetch_array(MYSQLI_NUM);
     return $r[0];
 }
+
+function actualizar_datos_boton($mysql,$v1,$v2,$v3,$v4,$v5,$v6)
+{
+    $consulta = "UPDATE boton SET telefono = ?, nombre_boton = ?, email = ?, contacto = ?, telefono_2 = ? WHERE num_boton = ?";
+    $sentencia = $mysql->prepare($consulta);
+    $sentencia->bind_param("sssss", $telefono, $area, $email, $contacto, $telefono_2, $boton);
+    $boton = $mysql->real_escape_string($v1);
+    $area = $mysql->real_escape_string($v2);
+    $email = $mysql->real_escape_string($v3);
+    $contacto = $mysql->real_escape_string($v4);
+    $telefono = $mysql->real_escape_string($v5);
+    $telefono_2 = $mysql->real_escape_string($v6);
+
+    $sentencia->execute();
+
+    if($mysql->affected_rows)
+    {
+        return true;
+    }
+
+    $sentencia->close();
+}
