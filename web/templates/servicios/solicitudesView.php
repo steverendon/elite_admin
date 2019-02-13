@@ -33,6 +33,8 @@
     Resumen</button>
 </div>
 
+
+
 <!-- modal -->
 
 <div class="modal" id="historial"  role="dialog">
@@ -83,7 +85,7 @@
 
                 <br>
 
-                <?php mostrar_resumen_aceptados($conexion) ?>
+                <?php mostrar_resumen_aceptados($conexion); ?>
 
             </div>
 
@@ -91,7 +93,7 @@
 
                 <br>
 
-                <?php mostrar_resumen_cancelados($conexion) ?>
+                <?php mostrar_resumen_cancelados($conexion); ?>
 
             </div>
 
@@ -99,7 +101,7 @@
 
                 <br>
 
-                <?php mostrar_tabla_resumen($conexion) ?>
+                <?php mostrar_tabla_resumen($conexion); ?>
 
             </div>
 
@@ -107,16 +109,17 @@
     </div>
   </div>
 </div>
+</div>
 
 <audio id="audio" controls style="display:none">
     <source type="audio/wav" src="web/sonidos/notificacion.mp3">
 </audio>
 
-<?php require_once 'web/over/footer.php' ?>
-
 <script src="web/ajax/servicios/servicio.js"></script>
 <script src="web/ajax/servicios/historial.js"></script>
 <script src="web/push.js/bin/push.min.js"></script>
+
+<?php require_once 'web/over/footer.php'?>
 
 </body>
 </html>
