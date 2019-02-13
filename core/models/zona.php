@@ -40,7 +40,7 @@ function lista_zonas($mysql)
 {
     $sql = "SELECT * FROM zona";
     $resultado = $mysql->query($sql);
-    $lista = '<select class="form-control" id="exampleSelect1" name="id_zona"><option>Seleccione Una Zona</option>';
+    $lista = '<select class="form-control" id="exampleSelect1" name="id_zona"><option>Select An Zone</option>';
     while($u = $resultado->fetch_array())
     {
         $lista .= '<option value="'.$u[0].'">'.$u[1].'</option>';

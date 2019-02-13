@@ -86,12 +86,14 @@
                         <form action="" id="formac">
 
                             <div class="row">
-                                <div class="col-lg-4">
+
+                                <div class="col-lg-3">
                                   <div class="form-group">
                                     <input class="form-control" type="text" placeholder="Tax id" id="Documento" name="documento" required>
                                   </div>
                                 </div>
-                                <div class="col-lg-4">
+
+                                <div class="col-lg-3">
                                   <!--<div class="form-group">
                                     <input class="form-control form-control-lg text-uppercase " type="text" placeholder="Serial de Boton" id="num_boton" name="num_boton" required>
                                 </div>-->
@@ -99,29 +101,49 @@
                                     <?php echo select_btn($conexion) ?>
                                 </div>
                                 </div>
-                                <div class="col-lg-4">
+
+                                <div class="col-lg-3">
                                   <div class="form-group">
-                                    <input class="form-control" type="text" placeholder="Cliente Name" id="nombre_boton" name="nombre_boton" required>
+                                    <input class="form-control" type="text" placeholder="Area" id="nombre_boton" name="nombre_boton" required>
                                   </div>
                                 </div>
-                                <div class="col-lg-4">
+
+                                <div class="col-lg-3">
+                                  <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Email" id="email_contacto" name="email_contacto" required>
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-3">
                                   <div class="form-group">
                                     <input class="form-control" type="text" placeholder="Longitud" id="input_lon" name="longitud" required>
                                   </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-3">
                                   <div class="form-group">
                                     <input class="form-control" type="text" placeholder="Latitud" id="input_lat" name="latitud" required>
                                   </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-3">
                                   <div class="form-group">
                                     <input class="form-control" type="text" placeholder="Work Order Address" id="direccion" name="direccion" required>
                                   </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-3">
+                                  <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Contact" id="contacto" name="contacto" required>
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-3">
                                   <div class="form-group">
                                     <input class="form-control" type="text" placeholder="Main Contant Phone" id="telefono" name="telefono" required>
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-3">
+                                  <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Secondary Contant Phone" id="telefono_2" name="telefono_2">
                                   </div>
                                 </div>
 
@@ -132,7 +154,7 @@
                                 -->
 
 
-                                <div class="col-lg-2" id="lista_zonas_3">
+                                <div class="col-lg-3" id="lista_zonas_3">
 
 
                                     <!-- ajax -->
@@ -148,7 +170,7 @@
                                 -->
 
 
-                                <div class="col-lg-6">
+                                <div class="col-lg-3">
                                   <div class="form-group">
                                       <input class="btn btn-success btn-block" type="submit" id="btn-activar" value="Activate">
                                   </div>

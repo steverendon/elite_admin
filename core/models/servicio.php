@@ -2,7 +2,7 @@
 
 function mostrar_solicitud($mysql)
 {
-$query = "SELECT b.documento,b.direccion,b.telefono,b.latitud,b.longitud,s.estado,s.fecha,s.hora,s.id,b.latitud,b.longitud, b.nombre_boton, b.zona FROM servicios as s LEFT JOIN boton as b on s.num_boton = b.num_boton where s.estado = 'solicitado' ORDER BY s.id DESC";
+$query = "SELECT b.documento,b.direccion,b.telefono,b.latitud,b.longitud,s.estado,s.fecha,s.hora,s.id,b.latitud,b.longitud, b.nombre_boton, b.zona, b.contacto,b.telefono_2 FROM servicios as s LEFT JOIN boton as b on s.num_boton = b.num_boton where s.estado = 'solicitado' ORDER BY s.id DESC";
 $resultado = $mysql->query($query);
 
 $salida = "<table class='table table-hover' style='overflow:auto'>
@@ -10,8 +10,9 @@ $salida = "<table class='table table-hover' style='overflow:auto'>
                 <tr>
                   <th scope='col'>Service Address</th>
                   <th scope='col'>Telephone</th>
-                  <th scope='col'>Name</th>
-                  <th scope='col'>Zone</th>
+                  <th scope='col'>Telephone 2</th>
+                  <th scope='col'>Area</th>
+                  <th scope='col'>Contacto</th>
                   <th scope='col'>State</th>
                   <th scope='col'>Date</th>
                   <th scope='col'>Hour</th>
@@ -25,8 +26,9 @@ while($fila=$resultado->fetch_array())
     $salida .= " <tr>
                   <th>".$fila[1]."</th>
                   <td>".$fila[2]."</td>
+                  <td>".$fila[14]."</td>
                   <td>".$fila[11]."</td>
-                  <td>".$fila[12]."</td>
+                  <td>".$fila[13]."</td>
                   <td>".$fila[5]."</td>
                   <td>".$fila[6]."</td>
                   <td>".$fila[7]."</td>

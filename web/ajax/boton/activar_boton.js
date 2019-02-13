@@ -22,6 +22,9 @@ jQuery(document).on('submit','#formac',function(event){
             $('#telefono').val('');
             $('#input_lat').val('');
             $('#input_lon').val('');
+            $('#contacto').val('');
+            $('#email_contacto').val('');
+            $('#telefono_2').val('');
         }else{
              alertify.error('Error when activating the button');
             $('#btn-activar').val('Activate');

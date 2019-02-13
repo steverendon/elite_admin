@@ -30,11 +30,15 @@ function cambiar_estado_boton($mysql,$v1,$v2)
     $sentencia->close();
 }
 
-function activarBoton($mysql,$v1,$v2,$v3,$v4,$v5,$v6,$v7,$v8)
+function activarBoton($mysql,$v1,$v2,$v3,$v4,$v5,$v6,$v7,$v8,$v9,$v10,$v11)
 {
-    $consulta = "INSERT INTO boton(documento,num_boton,nombre_boton,direccion,telefono,latitud,longitud,zona) VALUES (?,?,?,?,?,?,?,?)";
+    $consulta = "INSERT INTO boton(documento,num_boton,nombre_boton,direccion,telefono,latitud,longitud,zona,email,contacto,telefono_2) VALUES (?,?,?,?,?,?,?,?,?,?,?)";
+
     $sentencia = $mysql->prepare($consulta);
-    $sentencia->bind_param("sssssssi",$documento,$num_boton,$nombre_boton,$direccion,$telefono,$latitud,$longitud,$zona);
+
+    $sentencia->bind_param("sssssssisss",$documento,$num_boton,$nombre_boton,$direccion,$telefono,$latitud,$longitud,$zona,
+    $contacto,$email,$telefono);
+
     $documento = $mysql->real_escape_string($v1);
     $num_boton = $mysql->real_escape_string($v2);
     $nombre_boton = $mysql->real_escape_string($v3);
@@ -43,6 +47,9 @@ function activarBoton($mysql,$v1,$v2,$v3,$v4,$v5,$v6,$v7,$v8)
     $latitud = $mysql->real_escape_string($v6);
     $longitud = $mysql->real_escape_string($v7);
     $zona = $mysql->real_escape_string($v8);
+    $contacto = $mysql->real_escape_string($v9);
+    $email = $mysql->real_escape_string($v10);
+    $telefono_2 = $mysql->real_escape_string($v11);
 
     $sentencia->execute();
 

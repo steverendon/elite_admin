@@ -19,9 +19,16 @@ $telefono = $_POST['telefono'];
 $latitud = $_POST['latitud'];
 $longitud = $_POST['longitud'];
 $zona = $_POST['id_zona'];
+$contacto = $_POST['contacto'];
+$email = $_POST['email_contacto'];
+$telefono_2 = $_POST['telefono_2'];
 
-if(activarBoton($conexion,$documento,$num_boton,$nombre_boton,$direccion,$telefono,$latitud,$longitud,$zona)){
+if(activarBoton($conexion,$documento,$num_boton,$nombre_boton,$direccion,$telefono,$latitud,$longitud,$zona,$contacto,
+$email,$telefono_2))
+{
     echo json_encode(array('error' => false));
-}else{
+}
+else
+{
     echo json_encode(array('error' => true));
 }
