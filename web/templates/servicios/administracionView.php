@@ -25,7 +25,7 @@
                             <div class="card-header bg-primary text-white"><i class="fas fa-map-marker-alt"></i> Search Ubication</div>
                           <div class="card-body" style="height:153px">
                             <div class="form-group">
-                              <button type="button" class="btn btn-info" id="dame_ubicacion">View Ubication</button>
+                              <button type="button" class="btn btn-info" id="dame_ubicacion">View Location</button>
                               <a href="https://www.google.com/maps/d/u/0/edit?hl=es&mid=1YotwVqsXyNKRXwLZnZz38rDDcDQfstdu&ll=26.700250992896862%2C-80.05877213770384&z=15" target="_blank" class="btn btn-outline-info" id="btn-link">View Zone</a>
                             </div>
                               <p><i class="fas fa-globe"></i> <b id="latitud">Latitud:</b></p>

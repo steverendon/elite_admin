@@ -1,5 +1,5 @@
 function aceptar(id){
-    alertify.prompt("Aceptar solicitud","Orden de servicio",
+    alertify.prompt("Aceptar","Ingresar orden de servicio","",
       function(evt, value){
         asignarServicio(id,value);
       },
@@ -9,7 +9,7 @@ function aceptar(id){
 }
 
 function cancelar(id){
-    alertify.prompt("Cancelar solicitud?","Observaciones",
+    alertify.prompt("Cancelar","Justificar cancelacion","",
       function(evt, value){
         cancelarServicio(id,value);
       },
