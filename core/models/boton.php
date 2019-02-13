@@ -152,7 +152,7 @@ function contar_pulsaciones($mysql,$v1)
     return $r[0];
 }
 
-function actualizar_datos_boton($mysql,$v1,$v2,$v3,$v4,$v5,$v6)
+function actualizar_datos_boton($mysql,$v1,$v2,$v3,$v4,$v5,$v6)//en construccion
 {
     $consulta = "UPDATE boton SET telefono = ?, nombre_boton = ?, email = ?, contacto = ?, telefono_2 = ? WHERE num_boton = ?";
     $sentencia = $mysql->prepare($consulta);

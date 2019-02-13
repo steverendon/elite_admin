@@ -39,7 +39,7 @@ if($resultado->num_rows>0)
         while($fila=$resultado->fetch_assoc())
         {
             $p = contar_pulsaciones($conexion,$fila['num_boton']);
-            $salida .= " <tr data-toggle='modal' data-target='#boton_datos' onClick='boton_datos(".$fila['num_boton'].")'>
+            $salida .= " <tr>
                           <th>".$fila['nombre_boton']."</th>
                           <td>".$fila['num_boton']." (".$p.")</td>
                           <td>".$fila['direccion']."</td>
